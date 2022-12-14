@@ -27,6 +27,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+# Custom ignore
+vendor/
 /config/environments/*
 /config/credentials*
 /config/database*
