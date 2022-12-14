@@ -47,3 +47,5 @@ group :development do
 end
 
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+
+gem "rack-cors", "~> 1.1"
