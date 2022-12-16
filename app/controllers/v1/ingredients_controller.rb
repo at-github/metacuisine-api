@@ -1,7 +1,7 @@
 class V1::IngredientsController < ApplicationController
   def index
-    ingredients = Ingredient.all
-    render json: ingredients, statuss: 200
+    ingredients = Ingredient.all.order('id DESC')
+    render json: ingredients, status: 200
   end
 
   def show
