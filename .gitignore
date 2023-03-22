@@ -32,3 +32,7 @@ vendor/
 /config/environments/*
 /config/credentials*
 /config/database*
+
+# Post reboot project
+gems
+cache
