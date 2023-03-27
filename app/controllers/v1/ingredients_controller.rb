@@ -29,6 +29,14 @@ class V1::IngredientsController < ApplicationController
     end
   end
 
+  def destroy
+    ingredient = Ingredient.find_by(id: params[:id])
+
+    return render json: { error: 'Ingredient Not Found.' }, status: 404 unless ingredient
+
+    ingredient.delete
+  end
+
   private
     def ingredient_params
       params.require(:ingredient).permit([
