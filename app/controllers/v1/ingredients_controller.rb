@@ -43,6 +43,8 @@ module V1
       ingredient = Ingredient.find_by(id: params[:id])
 
       return render json: ingredient, status: 200 if ingredient.update(ingredient_params)
+
+      render json: { error: ingredient.errors }, status: 400
     end
 
     private
