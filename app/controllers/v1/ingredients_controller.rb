@@ -39,6 +39,12 @@ module V1
       ingredient.delete
     end
 
+    def update
+      ingredient = Ingredient.find_by(id: params[:id])
+
+      return render json: ingredient, status: 200 if ingredient.update(ingredient_params)
+    end
+
     private
 
     def ingredient_params
