@@ -5,7 +5,7 @@ module V1
   class IngredientsController < ApplicationController
     def index
       ingredients = Ingredient.all.order('id DESC')
-      render json: ingredients, status: 200
+      render json: ingredients, status: ingredients.empty? ? 204 : 200
     end
 
     def show
