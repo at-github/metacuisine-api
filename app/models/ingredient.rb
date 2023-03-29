@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
+# Handle ingredient
 class Ingredient < ApplicationRecord
-  validates :name,  presence: true, uniqueness: { case_sensitive: false}
+  validates :name,  presence: true, uniqueness: { case_sensitive: false }
   validates :price, presence: true
   validates :unit,  presence: true
 
