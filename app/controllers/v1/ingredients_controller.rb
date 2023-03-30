@@ -17,13 +17,7 @@ module V1
 
     def create
       begin
-        ingredient = Ingredient.new(
-          name: params[:name],
-          price: params[:price],
-          unit: params[:unit],
-          origin_animal: params[:origin_animal],
-          average_weight: params[:average_weight]
-        )
+        ingredient = Ingredient.new(ingredient_params)
       rescue ArgumentError => e
         return render json: { error: e }, status: 400
       end
