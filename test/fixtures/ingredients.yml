@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+farine:
+  name: Farine
   price: 1.5
-  unit: MyString
+  unit: kg
   origin_animal: false
 
-two:
-  name: MyString
-  price: 1.5
-  unit: MyString
+sel:
+  name: Sel
+  price: 0.5
+  unit: kg
   origin_animal: false

@@ -19,8 +19,8 @@ class ComputationTest < ActiveSupport::TestCase
     assert_not computation_three.save, 'Saved computation with title already exist but different case'
   end
 
-  test 'should save computation' do
-    computation_one = Computation.new({ title: 'title' })
-    assert computation_one.save, 'Save computation with expected data'
+  test 'should save computation with just a title' do
+    computation = Computation.new({ title: 'title' })
+    assert computation.save, 'Saved computation with just title'
   end
 end

@@ -1,4 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 first_computation:
-  title: 'Mon premier chiffrage'
+  title: Mon premier chiffrage
+
+computation_with_ingredients:
+  title: Chiffrage avec des ingrédients
+  ingredients:
+    - farine
+    - sel
