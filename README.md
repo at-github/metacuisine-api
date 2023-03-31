@@ -9,3 +9,7 @@
   `bundle install`
 2. Fill database with samples
   `rails db:seed`
+
+## Testing
+
+`rails test`
