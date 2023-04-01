@@ -28,6 +28,11 @@ Ingredient.create!(
       name: 'Huile d’olives Grecque',
       price: 9.97,
       unit: 'kg'
+    },
+    {
+      name: 'Œuf',
+      price: 0.29,
+      unit: 'unit'
     }
   ]
 )

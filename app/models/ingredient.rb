@@ -7,5 +7,5 @@ class Ingredient < ApplicationRecord
   validates :price, presence: true
   validates :unit,  presence: true
 
-  enum unit: %i[kg unit]
+  enum unit: { kg: 'kg', unit: 'unit' }
 end

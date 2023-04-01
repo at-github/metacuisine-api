@@ -75,6 +75,7 @@ module V1
       ingredient = JSON.parse @response.body
       assert_equal 'New', ingredient['name'], 'Resource must have the right name'
       assert_equal 0.01, ingredient['price'], 'Resource must have the right price'
+      assert_equal 'kg', ingredient['unit'], 'Resource must have the right unit'
     end
   end
 end
