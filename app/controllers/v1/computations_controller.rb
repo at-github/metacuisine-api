@@ -16,10 +16,10 @@ module V1
     end
 
     def create
-      computation = Computation.new(computation_params)
+      computation = Computation.new(title: computation_params[:title])
 
       begin
-        params['computation']['ingredients']&.map do |ingredient_request|
+        computation_params[:ingredients]&.map do |ingredient_request|
           computation.ingredients << get_ingredient(ingredient_request['id'])
         end
       rescue ArgumentError => e
@@ -41,7 +41,7 @@ module V1
     end
 
     def computation_params
-      params.require(:computation).permit(%i[title ingredients])
+      params.require(:computation).permit([:title, { ingredients: [:id] }])
     end
   end
 end
