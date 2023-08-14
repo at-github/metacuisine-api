@@ -9,6 +9,8 @@
   `bundle install`
 2. Fill database with samples
   `rails db:seed`
+3. Start rails
+  `rails s`
 
 ## Testing
 
