@@ -10,14 +10,15 @@
 2. Fill database with samples
   `rails db:seed`
 3. Start rails
-  `rails s`
+  -> See "Launch"
 
 ## Launch
 
 ### WIP
 
-To clean
+TODO to clean
 Launch app
+/!\ Make sure DATABASE_URL is unset or empty
 `PORT=xxxx rails s`
 Nginx 
 ```
@@ -29,3 +30,7 @@ location / {
 ## Testing
 
 `rails test`
+
+## Other
+
+`psql db_name db_user`
