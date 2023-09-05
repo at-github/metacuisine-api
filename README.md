@@ -19,7 +19,8 @@
 TODO to clean
 Launch app
 /!\ Make sure DATABASE_URL is unset or empty
-`PORT=xxxx rails s`
+`PORT=xxxx rails s` For dev
+`PORT=xxxx RAILS_ENV=production rails s` For production
 Nginx 
 ```
 location / {
