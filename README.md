@@ -2,36 +2,31 @@
 
 ## Setup
 
-0. Be sure to use the correct ruby version
-  - Install `rvm`
-  - `rvm install ruby-3.0.5`
-1. Be sure to have bundles installed
+1. Be sure to use the correct ruby version
+  - [ ] Install `rvm`
+  - [ ] `rvm install ruby-3.0.5`
+2. Be sure to have bundles installed
   `bundle install`
-2. Fill database with samples
+3. Fill database with samples
   `rails db:seed`
-3. Start rails
-  -> See "Launch"
 
-## Launch
-
-### WIP
-
-TODO to clean
-Launch app
-/!\ Make sure DATABASE_URL is unset or empty
-`PORT=xxxx rails s` For dev
-`PORT=xxxx RAILS_ENV=production rails s` For production
-Nginx 
-```
+### Nginx 
+```nginx
 location / {
   proxy_pass http://localhost:xxxx
 }
 ```
 
+## Launch
+
+### Env
+
+**/!\ Make sure DATABASE_URL is unset**
+
+`PORT=xxxx rails s` For dev
+
+`PORT=xxxx RAILS_ENV=production rails s` For production
+
 ## Testing
 
 `rails test`
-
-## Other
-
-`psql db_name db_user`
